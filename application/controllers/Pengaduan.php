@@ -266,7 +266,7 @@ class Pengaduan extends CI_Controller{
 
 		$data['element']  = "<div style='border-bottom:3px solid black; padding-bottom:20px;'>";
 		$data['element'] .= "<h3 class='text-center'><strong>RENCANA ANGGARAN BIAYA</strong></h3>";
-		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'>DESA PAGERNGUMBUK KECAMATAN WONOAYU</h4>";
+		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'>DESA TOPIDI KECAMATAN TINGGIMONCONG</h4>";
 		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'>TAHUN ANGGARAN ".TAHUN."</h4>";
 		$data['element'] .= "</div>";
 
@@ -366,7 +366,7 @@ class Pengaduan extends CI_Controller{
 		$data['element'] .= '</tbody>';
 		$data['element'] .= '</table>';
 		$data['element'] .= '<br><br>';
-		$data['element'] .= '<div class="pull-right text-center" style="width: 100%;"><h5>Desa Pagerngumbuk, '.date("d M Y").'</h5></div>';
+		$data['element'] .= '<div class="pull-right text-center" style="width: 100%;"><h5>Desa Topidi, '.date("d M Y").'</h5></div>';
 		$data['element'] .= '<div class="pull-right text-center" style="width: 40%; margin-right:0px; border-bottom:1px solid black;">';
 		$data['element'] .= '<h5 for="">Ketua Pelaksana</h5><br><br><br><br><br/>';
 		$data['element'] .= '<h5><strong>'.$hasil->ketua_pelaksana.'</strong></h5>';
@@ -374,7 +374,7 @@ class Pengaduan extends CI_Controller{
 		$data['element'] .= '<div class=" text-center" style="margin-top:35px; width: 40%; margin-right:0px; border-bottom:1px solid black;">';
 		$data['element'] .= '<h5 for="">Disetujui </h5>';
 		$data['element'] .= '<h5 for="" style="margin-top:-8px;">Kepala Desa</h5><br/><br><br><br>';
-		$data['element'] .= '<h5><strong>Khoirul Anam</strong></h5>';
+		$data['element'] .= '<h5><strong>Abdul Kadir</strong></h5>';
 		$data['element'] .= '</div>';
 
 		$this->load->view('v_cetak', $data);
@@ -391,12 +391,12 @@ class Pengaduan extends CI_Controller{
 
 		$data['element']  = "<div style='padding-bottom:20px;'>";
 		$data['element'] .= "<h3 class='text-center'><strong>LAPORAN KEGIATAN ".strtoupper($hasil->nama)."</strong></h3>";
-		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'>DESA PAGERNGUMBUK KECAMATAN WONOAYU</h4>";
+		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'>DESA TOPIDI KECAMATAN TINGGIMONCONG</h4>";
 		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'>TAHUN ANGGARAN ".TAHUN."</h4>";
 		$data['element'] .= "</div>";
 
 		$data['element'] .= '<div style="margin-left:25px;">';
-		$data['element'] .= '<h5>Yth. Kepala Desa <strong>Khoirul Anam</strong></h5>';
+		$data['element'] .= '<h5>Yth. Kepala Desa <strong>Abdul Kadir</strong></h5>';
 		$data['element'] .= '<h5>melalui Sekretaris Kesa</h5>';
 		$data['element'] .= '<h5>di Tempat</h5>';
 		$data['element'] .= '</div>';
@@ -480,14 +480,14 @@ class Pengaduan extends CI_Controller{
 		$data['element'] .= '<h5 style="margin-top:25px; margin-left:25px;">D. Saran dan Rekomendasi<h5>';
 		$data['element'] .= '<h5 style="margin-top:-5px; margin-left:43px; text-align:justify;">'.$hasil->saran.'<h5>';
 		$data['element'] .= '<div class="text-center" style="width: 40%; margin-left:60%; border-bottom:1px solid black;">';
-		$data['element'] .= '<h5 for="">Desa Pagerngumbuk, '.date("d M Y").'</h5>';
+		$data['element'] .= '<h5 for="">Desa Topidi, '.date("d M Y").'</h5>';
 		$data['element'] .= '<h5 for=""><strong>Ketua Pelaksana</strong></h5><br><br><br><br>';
 		$data['element'] .= '<h5><strong>'.$hasil->ketua_pelaksana.'</strong></h5>';
 		$data['element'] .= '</div>';
 		// $data['element'] .= '<div class=" text-center" style="color:white;margin-top:35px; width: 40%; margin-right:0px;">';
 		// $data['element'] .= '<h5 for="">Disetujui </h5>';
 		// $data['element'] .= '<h5 for="" style="margin-top:-8px;">Kepala Desa</h5><br><br><br>';
-		// $data['element'] .= '<h5><strong>Khoirul Anam</strong></h5>';
+		// $data['element'] .= '<h5><strong>Abdul Kadir</strong></h5>';
 		// $data['element'] .= '</div>';
 
 		$this->load->view('v_cetak', $data);

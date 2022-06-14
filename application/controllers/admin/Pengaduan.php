@@ -91,7 +91,7 @@ class Pengaduan extends CI_Controller{
 		$data['element']  = "<div style='border-bottom:3px solid black; padding-bottom:20px;'>";
 		$data['element'] .= "<h4 class='text-center'>BADAN PERMUSYAWARATAN DESA</h4>";
 		$data['element'] .= "<h1 style='margin-top:-8px;' class='text-center'>BPD</h1>";
-		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'>DESA PAGERNGUMBUK KECAMATAN WONOAYU</h4>";
+		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'>DESA TOPIDI KECAMATAN TINGGIMONCONG</h4>";
 		$data['element'] .= "</div>";
 
 		$data['element'] .= '<br>';
@@ -146,7 +146,7 @@ class Pengaduan extends CI_Controller{
 		$data['element'] .= '</table>';
 		$data['element'] .= '<br><br><br><br>';
 		$data['element'] .= '<div class="pull-right text-center" style="width: 250px; margin-right:50px; border-bottom:1px solid black;">';
-		$data['element'] .= '<h5 for="">Desa Pagerngumbuk, '.date("d M Y", strtotime($hasil->tgl_pengaduan)).'</h5>';
+		$data['element'] .= '<h5 for="">Desa Topidi, '.date("d M Y", strtotime($hasil->tgl_pengaduan)).'</h5>';
 		$data['element'] .= '<h5 for="">Pengadu</h5>';
 		$data['element'] .= "<div style='width:7cm; display:inline-block;'>";
 		$data['element'] .= "<img src='".base_url($hasil->qrcode_file)."' style='width:2cm; float:left;'>";

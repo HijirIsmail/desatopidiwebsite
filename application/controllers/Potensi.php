@@ -92,7 +92,7 @@ class Potensi extends CI_Controller{
 	}
 
 	function bumdes(){
-		$title['judul'] = 'Data BUMDes';
+		$title['judul'] = 'Data Produk';
 		$data['hasil'] = $this->m_crud->readBy('tbl_bumdes', array('status <>'=>-1));
 		$this->load->view('includes/v_header', $title);
 		$this->load->view('potensi/v_bumdes', $data);
@@ -100,7 +100,7 @@ class Potensi extends CI_Controller{
 	}
 
 	function detail_bumdes($id){
-		$title['judul'] = 'Data BUMDes';
+		$title['judul'] = 'Data Produk';
 		$data['hasil'] = $this->m_crud->readBy('tbl_bumdes', array('id_bumdes'=>$id, 'status <>'=>-1))[0];
 		// print_r($data['hasil']);
 		$this->load->view('includes/v_header', $title);
@@ -142,6 +142,12 @@ class Potensi extends CI_Controller{
 		$data['hasil'] = $this->m_crud->readByOrder('tbl_dana', array('status <>'=>-1, 'tahun'=>TAHUN), "jumlah desc");
 		$this->load->view('includes/v_header', $title);
 		$this->load->view('potensi/v_dana', $data);
+		$this->load->view('includes/v_footer');
+	}
+	function gallery(){
+		$title['judul'] = 'Gallery Topidi';
+		$this->load->view('includes/v_header', $title);
+		$this->load->view('potensi/v_gallery');
 		$this->load->view('includes/v_footer');
 	}
 }

@@ -29,7 +29,7 @@ class Beranda extends CI_Controller {
 		$data['berita'] = $this->m_crud->customQuery("SELECT * FROM detail_berita WHERE status=".berita_valid." ORDER BY tgl_berita DESC LIMIT 3");
 		$data['pengaduan'] = $this->m_crud->customQuery("SELECT * FROM detail_pengaduan WHERE status<>".pengaduan_ditolak." ORDER BY tgl_pengaduan DESC LIMIT 3");
 
-		$title['judul'] = 'Desa Pagerngumbuk';
+		$title['judul'] = 'Desa Topidi';
 		$this->load->view('includes/v_header', $title);
 		$this->load->view('includes/v_banner');
 		$this->load->view('v_home', $data);

@@ -626,11 +626,11 @@ class Surat extends CI_Controller{
 		$warga = $this->m_crud->readBy('tbl_warga', array('nik'=>$hasil->nik))[0];
 
 		$data['element'] = "<div style='padding-bottom:20px; margin-right:13%; width:400px;' class='pull-right'>";
-		$data['element'] .= "<h4 class='text-center'><strong>PEMERINTAH KABUPATEN SIDOARJO</strong></h4>";
-		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'><strong>KECAMATAN WONOAYU</strong></h4>";
-		$data['element'] .= "<h4 style='font-size:20px; margin-top:-8px; font-weight:bold;' class='text-center'>KANTOR DESA PAGERNGUMBUK</h4>";
-		$data['element'] .= "<h5 style='margin-top:-8px;' class='text-center'>Jl. Pagerjajar No.05 - Telp. 031-867146 Fax. 031-880880</h5>";
-		$data['element'] .= "<h5 style='margin-top:-8px;' class='text-center'>SIDOARJO - 61261</h5>";
+		$data['element'] .= "<h4 class='text-center'><strong>PEMERINTAH KABUPATEN GOWA</strong></h4>";
+		$data['element'] .= "<h4 style='margin-top:-8px;' class='text-center'><strong>KECAMATAN TINGGIMONCONG</strong></h4>";
+		$data['element'] .= "<h4 style='font-size:20px; margin-top:-8px; font-weight:bold;' class='text-center'>KANTOR DESA TOPIDI</h4>";
+		$data['element'] .= "<h5 style='margin-top:-8px;' class='text-center'>Jl. Topidi No.05 - Telp. 031-867146 Fax. 031-880880</h5>";
+		$data['element'] .= "<h5 style='margin-top:-8px;' class='text-center'>GOWA - 61261</h5>";
 		$data['element'] .= "</div>";
 		$data['element'] .= "<div style='padding-bottom:20px; width:3cm; margin-right:20px;' class='pull-right'>";
 		$data['element'] .= "<img src='".base_url("assets/img/favicon.png")."' style='width:3cm;'>";
@@ -656,7 +656,7 @@ class Surat extends CI_Controller{
 
 		$data['element'] .= "</div>";
 		$data['element'] .= "<div class='col-md-12' style='margin-top:30px;'>";
-		$data['element'] .= "<p>Saya yang bertanda di bawah ini selaku Kepala Desa Pagerngumbuk, dengan ini menerangkan bahwa:</p>";
+		$data['element'] .= "<p>Saya yang bertanda di bawah ini selaku Kepala Desa Topidi, dengan ini menerangkan bahwa:</p>";
 
 		if ($surat=='kelahiran') {
 			$data['judul'] = 'Cetak Kelahiran';
@@ -693,7 +693,7 @@ class Surat extends CI_Controller{
 			$data['element'] .= '</tr>';
 			$data['element'] .= '<tr>';
 			$data['element'] .= '<th style="width:20px;border:none;">Alamat</th>';
-			$data['element'] .= '<td style="border:none;">: Desa Pagerngumbuk, RW '.$hasil->rw.', RT '.$hasil->rt.'</td>';
+			$data['element'] .= '<td style="border:none;">: Desa Topidi, RW '.$hasil->rw.', RT '.$hasil->rt.'</td>';
 			$data['element'] .= '</tr>';
 			$data['element'] .= '</tbody>';
 			$data['element'] .= '</table>';
@@ -781,7 +781,7 @@ class Surat extends CI_Controller{
 			// $data['element'] .= '</tr>';
 			$data['element'] .= '</tbody>';
 			$data['element'] .= '</table>';
-			$data['element'] .= "<p>Yang bersangkutan benar-benar warga Desa Pagerngumbuk yang tidak mampu untuk melakukan pembayaran $hasil->tujuan.</p><br/>";
+			$data['element'] .= "<p>Yang bersangkutan benar-benar warga Desa Topidi yang tidak mampu untuk melakukan pembayaran $hasil->tujuan.</p><br/>";
 		} elseif ($surat=='biodata') {
 			$data['judul'] = 'Cetak Biodata';
 
@@ -797,7 +797,7 @@ class Surat extends CI_Controller{
 			$data['element'] .= '</tr>';
 			$data['element'] .= '</tbody>';
 			$data['element'] .= '</table>';
-			$data['element'] .= "<p>Yang bersangkutan benar-benar warga Desa Pagerngumbuk yang memiliki anggota keluarga sebagai berikut:.</p><br/>";
+			$data['element'] .= "<p>Yang bersangkutan benar-benar warga Desa Topidi yang memiliki anggota keluarga sebagai berikut:.</p><br/>";
 			$data['element'] .= '<table class="table table-bordered">';
 			$data['element'] .= '<tbody>';
 			$data['element'] .= "
@@ -855,7 +855,7 @@ class Surat extends CI_Controller{
 			// $data['element'] .= '</tr>';
 			$data['element'] .= '</tbody>';
 			$data['element'] .= '</table>';
-			$data['element'] .= "<p>Yang bersangkutan benar-benar warga Desa Pagerngumbuk sedang $hasil->tujuan.</p><br/>";
+			$data['element'] .= "<p>Yang bersangkutan benar-benar warga Desa Topidi sedang $hasil->tujuan.</p><br/>";
 		} elseif ($surat=="domisili") {
 			$data['judul'] = 'Cetak Domisili';
 
@@ -877,7 +877,7 @@ class Surat extends CI_Controller{
 			if ($hasil->jenis=="usaha") {
 				$data['element'] .= '</tbody>';
 				$data['element'] .= '</table>';
-				$data['element'] .= "<p>Yang bersangkutan benar-benar warga Desa Pagerngumbuk yang memiliki usaha:";
+				$data['element'] .= "<p>Yang bersangkutan benar-benar warga Desa Topidi yang memiliki usaha:";
 				// $data['element'] .= "bernama $hasil->nama_usaha, yang beralamat di $hasil->alamat.</p><br/>";
 				$data['element'] .= '<table class="table table-borderless">';
 				$data['element'] .= '<tbody>';
@@ -911,7 +911,7 @@ class Surat extends CI_Controller{
 				$data['element'] .= '</tr>';
 				$data['element'] .= '</tbody>';
 				$data['element'] .= '</table>';
-				$data['element'] .= "<p>Yang bersangkutan benar-benar warga yang berdomisili di Desa Pagerngumbuk.</p><br/>";
+				$data['element'] .= "<p>Yang bersangkutan benar-benar warga yang berdomisili di Desa Topidi.</p><br/>";
 			}
 		}
 
@@ -919,7 +919,7 @@ class Surat extends CI_Controller{
 		$data['element'] .= "<p style='margin-top:-15px;'>Demikian surat keterangan $judul ini dibuat untuk dapat digunakan sebagaimana semestinya.</p>";
 		$data['element'] .= "</div>";
 		$data['element'] .= '<div class="pull-right text-center" style="width: 250px; margin-top:20px; margin-right:50px; border-bottom:1px solid black;">';
-		$data['element'] .= '<h5 for="">Desa Pagerngumbuk, '.date("d M Y").'</h5>';
+		$data['element'] .= '<h5 for="">Desa Topidi, '.date("d M Y").'</h5>';
 		$data['element'] .= '<h5 for="">Kepala Desa</h5>';
 		$data['element'] .= "<div style='width:7cm; display:inline-block;'>";
 		if ($hasil->qrcode_file!="") {
@@ -932,7 +932,7 @@ class Surat extends CI_Controller{
 			$data['element'] .= "<br/><br/>";
 		}
 		$data['element'] .= "</div>";
-		$data['element'] .= '<h5><strong>Khoirul Anam, S.T, M.H</strong></h5>';
+		$data['element'] .= '<h5><strong>Abdul Kadir, S.T, M.H</strong></h5>';
 		$data['element'] .= '</div>';
 		$this->load->view('v_cetak', $data);
 	}

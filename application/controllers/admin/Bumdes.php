@@ -11,8 +11,8 @@ class Bumdes extends CI_Controller{
 	}
 
 	function index(){
-		$title['judul'] = 'Daftar BUMDes';
-		$title['active'] = 'bumdes';
+		$title['judul'] = 'Daftar Produk';
+		$title['active'] = 'produk';
 
 		$data['hasil'] = $this->m_crud->readBy('tbl_bumdes', array('status <>'=>-1));
 		$data['judul'] = 'bumdes';
@@ -78,8 +78,8 @@ class Bumdes extends CI_Controller{
 			$data['detail'] = $detail;
 		}
 
-		$title['judul'] = 'Form BUMDes';
-		$title['active'] = 'bumdes';
+		$title['judul'] = 'Form Produk';
+		$title['active'] = 'produk';
 		$data['judul'] = 'bumdes';
 
 		$this->load->view('admin/includes/v_header', $title);

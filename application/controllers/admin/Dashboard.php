@@ -22,11 +22,11 @@ class Dashboard extends CI_Controller{
 
 		$data['pengaduan'] = $this->m_crud->readCount('tbl_pengaduan', array("status"=>pengaduan_baru));
 
-		$data['rab'] = $this->m_crud->readCount('tbl_kegiatan', array("status"=>kegiatan_baru));
+		/* $data['rab'] = $this->m_crud->readCount('tbl_kegiatan', array("status"=>kegiatan_baru));
 		$data['valid'] = $this->m_crud->readCount('tbl_kegiatan', array("status"=>kegiatan_rencana));
 		$data['revisi'] = $this->m_crud->readCount('tbl_kegiatan', array("status"=>kegiatan_revisi));
 		$data['progres'] = $this->m_crud->readCount('tbl_kegiatan', array("status"=>kegiatan_proses));
-		$data['lpj'] = $this->m_crud->readCount('tbl_kegiatan', array("status"=>kegiatan_selesai));
+		$data['lpj'] = $this->m_crud->readCount('tbl_kegiatan', array("status"=>kegiatan_selesai)); */
 
 		$data['berita'] = $this->m_crud->readCount('tbl_berita', array("status"=>berita_baru));
 		$this->load->view('admin/includes/v_header', $title);
