@@ -335,42 +335,42 @@
               <p>Pengaduan</p>
             </a>
           </li>
-          <li class="<?=($active=='kegiatan')?'active':''?>">
+          <!-- <li class="<?=($active=='kegiatan')?'active':''?>">
             <a href="<?=base_url("admin/kegiatan")?>">
               <p>Kegiatan</p>
             </a>
-          </li>
+          </li> -->
           <?php if ($_SESSION['role_admin']==1 || $_SESSION['role_admin']==2): ?>
-          <li class="<?=($active=='dana')?'active':''?>">
+          <!-- <li class="<?=($active=='dana')?'active':''?>">
             <a href="<?=base_url("admin/dana")?>">
               <p>Dana</p>
             </a>
-          </li>
-          <li class="<?=($active=='item')?'active':''?>">
+          </li> -->
+          <!-- <li class="<?=($active=='item')?'active':''?>">
             <a href="<?=base_url("admin/item")?>">
               <p>Item</p>
             </a>
-          </li>
+          </li> -->
           <li class="<?=($active=='berita')?'active':''?>">
             <a href="<?=base_url("admin/berita")?>">
               <p>Berita</p>
             </a>
           </li>
-          <li class="<?=($active=='umkm')?'active':''?>">
+          <!-- <li class="<?=($active=='umkm')?'active':''?>">
             <a href="<?=base_url("admin/umkm")?>">
               <p>UMKM</p>
             </a>
-          </li>
+          </li> -->
           <li class="<?=($active=='bumdes')?'active':''?>">
             <a href="<?=base_url("admin/bumdes")?>">
-              <p>BUMDes</p>
+              <p>Produk</p>
             </a>
           </li>
-          <li class="<?=($active=='potensi')?'active':''?>">
+          <!-- <li class="<?=($active=='potensi')?'active':''?>">
             <a href="<?=base_url("admin/potensi")?>">
               <p>Potensi</p>
             </a>
-          </li>
+          </li> -->
           <?php endif; ?>
         </ul>
         <ul class="nav navbar-nav navbar-right">

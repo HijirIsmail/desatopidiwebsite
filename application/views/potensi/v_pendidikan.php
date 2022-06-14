@@ -7,7 +7,7 @@
   <div class="container">
     <div class="section-title text-center">
       <h2>Data Pendidikan</h2>
-      <p class="separator" style="">Berikut data pendidkan warga Desa Pagerngumbuk.</p>
+      <p class="separator" style="">Berikut data pendidkan warga Desa Topidi.</p>
     </div>
     <div class="row">
       <div class="text-center col-md-8 offset-md-2">

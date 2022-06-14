@@ -5,7 +5,7 @@ $menu = $this->uri->segment(2);
 	<div class="container">
 		<div class="section-title text-center">
 			<h2>Data BUMDes</h2>
-			<p class="separator" style="">Berikut data BUMDes Desa Pagerngumbuk.</p>
+			<p class="separator" style="">Berikut data BUMDes Desa Topidi.</p>
 		</div>
 		<div class="col-md-12">
 			<div class="">
@@ -18,9 +18,9 @@ $menu = $this->uri->segment(2);
 								<th>#</th>
 								<th>Nama</th>
 								<th>Bidang</th>
-								<th>Ketua</th>
-								<th>Tgl Berdiri</th>
-								<th>No Telp</th>
+								<th>Pemesanan</th>
+								<th>Tanggal</th>
+								<th>Harga</th>
 								<th>Logo</th>
 								<!-- <th>Tindakan</th> -->
 							</thead>

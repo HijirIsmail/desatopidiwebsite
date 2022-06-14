@@ -15,9 +15,9 @@
 						<th>#</th>
 						<th>Nama</th>
 						<th>Bidang</th>
-						<th>Ketua</th>
-						<th>Tgl Berdiri</th>
-						<th>No Telp</th>
+						<th>Pemesanan</th>
+						<th>Tanggal</th>
+						<th>Harga</th>
 						<th>Logo</th>
 						<th>Tindakan</th>
 					</thead>

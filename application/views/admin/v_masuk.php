@@ -21,6 +21,7 @@
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
   }
   .form input {
     font-family: "Roboto", sans-serif;
@@ -37,7 +38,7 @@
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: #4CAF50;
+    background: #327A6D;
     width: 100%;
     border: 0;
     padding: 15px;
@@ -48,7 +49,7 @@
     cursor: pointer;
   }
   .form button:hover,.form button:active,.form button:focus {
-    background: #43A047;
+    background: #1E554B;
   }
   .form .message {
     margin: 15px 0 0;
@@ -96,11 +97,11 @@ text-decoration: none;
 color: #EF3B3A;
 } */
 body {
-  background: #76b852;
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(right, #FFFFFF, #2A9E89);
+  background: -moz-linear-gradient(right, #FFFFFF, #2A9E89);
+  background: -o-linear-gradient(right, #FFFFFF, #2A9E89);
+  background: linear-gradient(to left, #FFFFFF, #2A9E89);
   font-family: "Roboto", sans-serif;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
@@ -124,7 +125,7 @@ body {
           <input value="webdesa" type="password" placeholder="Kata Sandi" name="pass" required/>
           <?=form_error('pass'); ?>
           <button name="masuk">masuk</button>
-          <label class="message">Pergi Ke Website <a href="<?=base_url("/")?>">Desa Pagerngumbuk</a></label>
+          <label class="message">Pergi Ke Website <a href="<?=base_url("/")?>">Desa Topidi</a></label>
           <?php form_close(); ?>
         </div>
       </div>

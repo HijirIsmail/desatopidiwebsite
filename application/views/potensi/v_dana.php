@@ -7,7 +7,7 @@
   <div class="container">
     <div class="section-title text-center">
       <h2>Data Sumber Anggaran Desa <?=TAHUN?></h2>
-      <p class="separator" style="">Berikut detail sumber anggaran Desa Pagerngumbuk.</p>
+      <p class="separator" style="">Berikut detail sumber anggaran Desa Topidi.</p>
     </div>
     <div class="row">
       <div class="col-md-6 offset-md-3 table-responsive table-full-width mt-4">

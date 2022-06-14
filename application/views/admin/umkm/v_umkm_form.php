@@ -48,7 +48,7 @@
 			            <input class="form-control" type="date" name="tgl_berdiri" value="<?=$detail->tgl_berdiri?>" required>
 			          </div>
 								<div class="col-md-6">
-									<label for="" class="control-label modal-label">No Telp <span class="text-danger">*</span> </label>
+									<label for="" class="control-label modal-label">Harga <span class="text-danger">*</span> </label>
 									<input class="form-control" type="text" name="no_telp" value="<?=$detail->no_telp?>" required>
 								</div>
 								<div class="col-md-6">

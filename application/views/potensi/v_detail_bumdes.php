@@ -23,20 +23,24 @@ font-weight: bold;
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-12">
+          <br>
           <div class="section-title text-center">
-            <h2><?=$hasil->nama?> <img src="<?=$hasil->logo_file?>" alt="" width="80"> </h2>
+            <h2><?=$hasil->nama?></h2>
           </div>
           <!-- <div class="col-md-4"> -->
+            <br><br><center><h6><img src="<?=$hasil->logo_file?>" alt="" width="400"></h6></center><br>
             <h6>Bidang : <p class="badge badge-success px-1 py-2" style="text-transform:uppercase;"><?=$hasil->bidang?></p></h6>
-            <h6 class="float-left">Tgl Berdiri&ensp;: </h6>
+            <h6 class="float-left">Tanggal&ensp;: </h6>
             <p for="" class="float-left">&ensp;&ensp;<i class="fa fa-calendar">&ensp;</i><?=$hasil->tgl_berdiri?></p><br><br>
-            <h6 class="float-left">No. Telp&ensp;&ensp;: </h6>
+            <h6 class="float-left">Harga&ensp;&ensp;: </h6>
             <p for="" class="float-left">&ensp;&ensp;<?=$hasil->no_telp?></p><br><br>
-            <h6 class="float-left">Ketua&ensp;&ensp;: </h6>
-            <p for="" class="float-left">&ensp;&ensp;<i class="fa fa-user">&ensp;</i><?=$hasil->ketua?></p>
+            <h6 class="float-left">Pemesanan&ensp;&ensp;: &ensp;</h6>
+            <a href="<?=$hasil->ketua?>" class="btn btn-outline-dark btn-sm">Pesan Sekarang</a>
+
+            <!-- <a for="" class="float-left" href="<?=$hasil->ketua?>">&ensp;&ensp;<i class="fa fa-user">&ensp;</i>Tokopedia</a> -->
           <!-- </div> -->
-          <br><br><br>
-          <?=$hasil->deskripsi?>
+          <br><br>
+          <h1><?=$hasil->deskripsi?></h1>
         </div>
         <!-- <div class="col-md-12 mt-3">
           <hr>

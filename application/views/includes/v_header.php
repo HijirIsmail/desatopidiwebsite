@@ -8,11 +8,11 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="<?=base_url('assets/img/favicon.png')?>" rel="icon">
+  <!--<link href="<?=base_url('assets/img/favicon.png')?>" rel="icon"> -->
   <!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i|Poppins:100,200,300,300i,400,400i,500,500i,700" rel="stylesheet">
 
 
   <!-- Libraries CSS Files -->
@@ -138,7 +138,7 @@
   <header id="header" class="header header-hide">
     <div class="container">
       <div id="logo" class="pull-left">
-        <h1><a href="<?=base_url()?>" class="scrollto"><span>Desa</span> Pagerngumbuk</a></h1>
+        <h1><a href="<?=base_url()?>" class="scrollto"><span>Desa</span>Topidi</a></h1>
       </div>
 
       <nav id="nav-menu-container">
@@ -166,7 +166,8 @@
               </ul>
             </li>
           <?php endif; ?>
-
+          <li class="menu"><a href="<?=base_url()?>produk">Produk</a></li>
+          <li class="menu"><a href="wisata">Wisata</a></li>
           <li class="menu-has-children"><a href="#">Pengaduan</a>
             <ul>
               <li class="menu"><a href="<?=base_url()?>pengaduan/lihat/semua">Lihat Pengaduan</a></li>
@@ -180,14 +181,15 @@
           <li class="menu-has-children"><a href="#">Potensi Desa</a>
             <ul>
               <li><a href="<?=base_url()?>potensi/profil">Profil Desa</a></li>
-              <li><a href="<?=base_url()?>potensi/bumdes">Data BUMDes</a></li>
-              <li><a href="<?=base_url()?>potensi/umkm">Data UMKM</a></li>
+              <!-- <li><a href="<?=base_url()?>potensi/bumdes">Data BUMDes</a></li> -->
+              <!-- <li><a href="<?=base_url()?>potensi/umkm">Data UMKM</a></li> -->
               <li><a href="<?=base_url()?>potensi/goldar">Data Golongan Darah</a></li>
               <li><a href="<?=base_url()?>potensi/pendidikan">Data Pendidikan</a></li>
               <li><a href="<?=base_url()?>potensi/pekerjaan">Data Pekerjaan</a></li>
               <li><a href="<?=base_url()?>potensi/agama">Data Agama</a></li>
-              <li><a href="<?=base_url()?>potensi/dana">Data Sumber Anggaran</a></li>
-              <li><a href="<?=base_url()?>potensi/detail">Detail Potensi</a></li>
+              <!-- <li><a href="<?=base_url()?>potensi/dana">Data Sumber Anggaran</a></li>
+              <li><a href="<?=base_url()?>potensi/detail">Detail Potensi</a></li> -->
+              <li><a href="<?=base_url()?>potensi/gallery">Gallery</a></li>
             </ul>
           </li>
           <li class="menu-has-children"><a href="#">Berita</a>
@@ -199,6 +201,7 @@
               <?php endif; ?>
             </ul>
           </li>
+          <li class="menu"><a href="<?=base_url()?>hubungikami">Hubungi Kami</a></li>
 
           <?php if (isset($_SESSION['nik'])): ?>
             <?php $foto = ($_SESSION['foto']!="")?$_SESSION['foto']:'assets/img/warga/foto/default_profil.jpg'; ?>

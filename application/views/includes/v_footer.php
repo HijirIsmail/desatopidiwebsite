@@ -10,8 +10,8 @@ Footer
 
       <div class="col-md-12 col-lg-4">
         <div class="footer-logo">
-          <a class="navbar-brand" href="#">Desa Pagerngumbuk</a>
-          <p>Pagerngumbuk adalah sebuah desa di wilayah Kecamatan Wonoayu, Kabupaten Sidoarjo, Provinsi Jawa Timur.</p>
+          <a class="navbar-brand" href="#">Desa Topidi</a>
+          <p>Topidi adalah sebuah desa di wilayah Kelurahan Bonto Lerung, Kecamatan Tinggimoncong, Kabupaten Gowa, Provinsi Sulawesi Selatan.</p>
         </div>
       </div>
 
@@ -19,7 +19,7 @@ Footer
         <div class="list-menu">
           <h5 class="text-white ml-3">Surat</h5 class="text-white ml-3">
           <ul class="list-styled">
-            <li><a href="<?=base_url('surat/kelahiran')?>">Kelahiran</a></li>
+            <li><a href="<?=base_url('surat/buat_kelahiran')?>">Kelahiran</a></li>
             <li><a href="<?=base_url('surat/kematian')?>">Kematian</a></li>
             <li><a href="<?=base_url('surat/tidak_mampu')?>">Tidak Mampu</a></li>
             <li><a href="<?=base_url('surat/biodata')?>">Biodata</a></li>

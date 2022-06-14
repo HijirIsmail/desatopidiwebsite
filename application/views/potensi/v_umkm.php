@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="section-title text-center">
 			<h2>Data UMKM</h2>
-			<p class="separator" style="">Berikut data UMKM Desa Pagerngumbuk.</p>
+			<p class="separator" style="">Berikut data UMKM Desa Topidi.</p>
 		</div>
 <div class="col-md-12">
 	<div class="">

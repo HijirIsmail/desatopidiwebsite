@@ -11,7 +11,7 @@
 <section id="get-started" class="padd-section text-center wow fadeInUp">
   <div class="containers">
     <div class="section-title text-center">
-      <h2>Profil Desa Pagerngumbuk</h2>
+      <h2>Profil Desa Topidi</h2>
       <!-- <p class="separator" style="">Berikut data golongan darah warga Desa Pagerngumbuk.</p> -->
     </div>
     <div class="row">
@@ -33,7 +33,7 @@
         </ul><br>
         <!-- <div class="col-md-12 ml-3"> -->
         <h3>Susunan Organisasi dan Tata Kerja Pemerintah Desa Pagerngumbuk</h3><br>
-        <img src="<?=base_url()?>assets/img/susunan.png" alt="" style="width:100%;" id="imgsusunan"><br><br>
+        <center><img src="<?=base_url()?>assets/img/susunan.png" alt="" style="width:60%;" id="imgsusunan"></center><br><br>
         <h3>Jumlah Penduduk</h3>
         <table class="table table-bordered">
           <thead>
